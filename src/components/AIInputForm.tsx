@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { MicIcon, FileUploadIcon, ThumbsUpIcon, ThumbsDownIcon } from 'lucide-react';
+import { MicIcon, FileUp, ThumbsUpIcon, ThumbsDownIcon } from 'lucide-react';
 
 // Response format types
 type ResponseFormat = 'bullet-points' | 'one-word' | 'concise-paragraph';
@@ -70,7 +70,7 @@ const AIInputForm = () => {
                   <MicIcon className="h-4 w-4" />
                 </Button>
                 <Button type="button" variant="outline" size="icon" title="Upload File">
-                  <FileUploadIcon className="h-4 w-4" />
+                  <FileUp className="h-4 w-4" />
                 </Button>
                 <Button type="submit" className="ml-auto" disabled={isLoading}>
                   {isLoading ? 'Thinking...' : 'Get Answer'}
